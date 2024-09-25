@@ -11,10 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Expedition.hasMany(models.Package, {
+        foreignKey: 'expeditionId'
+      })
     }
   }
   Expedition.init({
-    name: DataTypes.STRING
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   }, {
     sequelize,
     modelName: 'Expedition',
