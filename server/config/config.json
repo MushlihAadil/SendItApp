@@ -2,14 +2,14 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "sendItDB_development",
+    "database": "sendItApp_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "postgres",
-    "database": "sendItDB_test",
+    "database": "sendItApp_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

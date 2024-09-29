@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 // Error Handlers
+app.use(require('./middleware/errorHandlers'));
 
 
 app.listen(PORT, () => {

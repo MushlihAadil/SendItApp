@@ -4,7 +4,6 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     let data = require("../data/expeditions.json").map((item) => {
-      delete item.id;
       item.createdAt = item.updatedAt = new Date();
       return item
     })
